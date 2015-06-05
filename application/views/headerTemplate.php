@@ -65,52 +65,15 @@
             
             	<ul>
                 	<li class="current"><a href="index.html">Home</a></li>
-                    <li><a href="#">Nosotros<i class="icon-chevron-down"></i></a>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Como funciona</a></li>
+                    <li><a href="#">Registrate</a></li>
+                    <li><a href="#">Ingresa</a></li>
+                    <li><a href="#">Info<i class="icon-chevron-down"></i></a>
                     	<ul>
-                        	<li><a href="archives.html"></a></li>
-                            <li><a href="single_post.html">Publicar</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Como funciona<i class="icon-chevron-down"></i></a>
-                    	<ul>
-                        	<li><a href="post_review.html">Review Post</a></li>
-                            <li><a href="post_image.html">Image Post</a></li>
-                            <li><a href="post_video.html">Video Post</a></li>
-                            <li><a href="post_audio.html">Audio Post</a></li>
-                            <li><a href="post_quote.html">Quote Post</a></li>
-                            <li><a href="post_facebook.html">Facebook Post</a></li>
-                            <li><a href="post_twitter.html">Twitter Post</a></li>
-                            <li><a href="post_permalink.html">Permalink Post</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Publicar<i class="icon-chevron-down"></i></a>
-                    	<ul>
-                        	<li><a href="portfolios.html">Portfolios</a></li>
-                            <li><a href="single_portfolio.html">Single Portfolio</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Features <i class="icon-chevron-down"></i></a>
-                    	<ul>
-                        	<li><a href="feature_columns.html">Columns Feature</a></li>
-                            <li><a href="feature_typography.html">Typography Feature</a></li>
-                            <li><a href="feature_shortcodes.html">Shortcodes Feature</a></li>
-                            <li><a href="#">Sub Menus <i class="icon-chevron-right"></i></a>
-                            	<ul>
-                                	<li><a href="#">Sub Menu 1</a></li>
-                                    <li><a href="#">Sub Menu 2</a></li>
-                                    <li><a href="#">Sub Menu 3</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Pages <i class="icon-chevron-down"></i></a>
-                    	<ul>
-                        	<li><a href="single_page.html">Default Page</a></li>
-                            <li><a href="page_author.html">Author Page</a></li>
-                            <li><a href="page_search.html">Search Page</a></li>
-                            <li><a href="page_contact.html">Contact Page</a></li>
-                            <li><a href="page_404.html">404 Page</a></li>
-                            <li><a href="page_sitemap.html">Sitemap Page</a></li>
+                        	<li><a href="single_page.html">Terminos y condiciones</a></li>
+                            <li><a href="page_author.html">Politica de privacidad</a></li>
+                            <li><a href="page_author.html">Preguntas frecuentes</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -153,12 +116,12 @@
         	<div class="container">
             
                 <ul>
-                	<li><a href="archives.html">National</a></li>
-                    <li><a href="archives.html">International</a></li>
-                    <li><a href="archives.html">Business</a></li>
-                    <li><a href="archives.html">Sports</a></li>
-                    <li><a href="archives.html">Entertainment</a></li>
-                    <li><a href="archives.html">Technology <i class="icon-chevron-down"></i></a>
+                	<li><a href="archives.html">Lo mas visto</a></li>
+                    <li><a href="archives.html">Politica</a></li>
+                    <li><a href="archives.html">Deportes</a></li>
+                    <li><a href="archives.html">Entretenimiento</a></li>
+                    <li><a href="archives.html">Actualidad</a></li>
+                    <li><a href="archives.html">Tecnologia<i class="icon-chevron-down"></i></a>
                     	<ul>
                         	<li><a href="archives.html">Computing</a></li>
                             <li><a href="archives.html">Mobile</a></li>
@@ -166,16 +129,9 @@
                             <li><a href="archives.html">Gaming</a></li>
                             <li><a href="archives.html">Internet</a></li>
                             <li><a href="archives.html">Hardware</a></li>
-                            <li><a href="#">Sub Categories <i class="icon-chevron-right"></i></a>
-                            	<ul>
-                                	<li><a href="#">Sub Category 1</a></li>
-                                    <li><a href="#">Sub Category 2</a></li>
-                                    <li><a href="#">Sub Category 3</a></li>
-                                </ul>
-                            </li>
                         </ul>
                     </li>
-                    <li><a href="archives.html">Environment</a></li>
+                    <li><a href="archives.html">Cazanoticias</a></li>
                 </ul>
                 
             </div>

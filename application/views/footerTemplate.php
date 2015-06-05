@@ -71,19 +71,6 @@
     </footer>
     <!-- #footer end -->
     
-    <div id="customize">
-    	<div class="colors colors-panel">
-        	<h5>Colors</h5>
-            <a href="#" class="blue" title="Blue" style="background-color:#44a3fc;"></a>
-            <a href="#" class="green" title="Green" style="background-color:#29a115;"></a>
-            <a href="#" class="lightblue" title="Light Blue" style="background-color:#3ebdc2;"></a>
-            <a href="#" class="orange" title="Orange" style="background-color:#eb6042;"></a>
-            <a href="#" class="purple" title="Purple" style="background-color:#bf37c7;"></a>
-            <a href="#" class="yellow" title="Yellow" style="background-color:#dd9b27;"></a>
-		</div>
-		<div class="popup-open"></div>
-	</div>
-    
 	<!-- JavaScripts -->
     <script type="text/javascript" src="public/js/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript" src="public/js/jquery-migrate-1.2.1.min.js"></script>

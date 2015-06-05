@@ -5,7 +5,7 @@ class Home extends CI_Controller {
    {
       
       $this->load->view('headerTemplate');
-      //$this->load->view('homeTemplate');
+      $this->load->view('homeTemplate');
    	  $this->load->view('footerTemplate');	
    }
 

@@ -989,7 +989,7 @@ div.ppt {
 		#featured-posts .item .item-wrap { position:relative; }
 		#featured-posts .item .post-thumbnail-overlay {
 			position:absolute;
-			top:0px;
+			top:60%;
 			right:0px;
 			bottom:0px;
 			left:0px;
