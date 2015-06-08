@@ -3,8 +3,8 @@ class Login extends CI_Controller {
 
    function ingresar($idioma=null)
    {
-         
-      //   $this->config->set_item('language', 'spanish');      //   Setear dinámicamente el idioma que deseamos que ejecute nuestra aplicación
+
+      $this->load->library('encrypt');
       if(!isset($_POST['maillogin'])){   //   Si no recibimos ningún valor proveniente del formulario, significa que el usuario recién ingresa.   
          $this->load->view('loginTemplate');      //   Por lo tanto le presentamos la pantalla del formulario de ingreso.
       }
@@ -15,8 +15,8 @@ class Login extends CI_Controller {
             $this->load->view('loginTemplate');                     //   En caso que no, volvemos a presentar la pantalla de login
          }
          else{                                       //   Si ambos campos fueron correctamente rellanados por el usuario,
-            $this->load->model('usuarios_model');
-            $ExisteUsuarioyPassoword=$this->usuarios_model->ValidarUsuario($_POST['maillogin'],$_POST['passwordlogin']);   //   comprobamos que el usuario exista en la base de datos y la password ingresada sea correcta
+            $this->load->model('usuario_model');
+            $ExisteUsuarioyPassoword=$this->usuario_model->ValidarUsuario($_POST['maillogin'],$_POST['passwordlogin']);   //   comprobamos que el usuario exista en la base de datos y la password ingresada sea correcta
             if($ExisteUsuarioyPassoword){   // La variable $ExisteUsuarioyPassoword recibe valor TRUE si el usuario existe y FALSE en caso que no. Este valor lo determina el modelo.
                echo "Validacion Ok<br><br><a href=''>Volver</a>";   //   Si el usuario ingresó datos de acceso válido, imprimos un mensaje de validación exitosa en pantalla
             }
