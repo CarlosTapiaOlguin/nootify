@@ -72,20 +72,20 @@
     <!-- #footer end -->
     
 	<!-- JavaScripts -->
-    <script type="text/javascript" src="public/js/jquery-1.10.2.min.js"></script>
-	<script type="text/javascript" src="public/js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url("public/js/jquery-1.10.2.min.js"); ?>"></script>
+	<script type="text/javascript" src="<?php echo base_url("public/js/jquery-migrate-1.2.1.min.js"); ?>"></script>
     <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
-    <script type="text/javascript" src="public/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="public/js/jquery-easing.js"></script>
-    <script type="text/javascript" src="public/js/jquery.placeholder.min.js"></script>
-    <script type="text/javascript" src="public/js/jquery.flexslider-min.js"></script>
-    <script type="text/javascript" src="public/js/jquery.prettyPhoto.js"></script>
-    <script type="text/javascript" src="public/js/jquery.fitvids.min.js"></script>
-    <script type="text/javascript" src="public/js/jquery.isotope.min.js"></script>
-    <script type="text/javascript" src="public/js/jquery.mobilemenu.js"></script>
-    <script type="text/javascript" src="public/js/jflickrfeed.min.js"></script>
-    <script type="text/javascript" src="public/js/gmaps.js"></script>
-    <script type="text/javascript" src="public/js/main.js"></script>
-    <script type="text/javascript" src="public/js/app.js"></script>
+    <script type="text/javascript" src="<?php echo base_url("public/js/bootstrap.min.js"); ?>"></script>
+    <script type="text/javascript" src="<?php echo base_url("public/js/jquery-easing.js"); ?>"></script>
+    <script type="text/javascript" src="<?php echo base_url("public/js/jquery.placeholder.min.js"); ?>"></script>
+    <script type="text/javascript" src="<?php echo base_url("public/js/jquery.flexslider-min.js"); ?>"></script>
+    <script type="text/javascript" src="<?php echo base_url("public/js/jquery.prettyPhoto.js"); ?>"></script>
+    <script type="text/javascript" src="<?php echo base_url("public/js/jquery.fitvids.min.js"); ?>"></script>
+    <script type="text/javascript" src="<?php echo base_url("public/js/jquery.isotope.min.js"); ?>"></script>
+    <script type="text/javascript" src="<?php echo base_url("public/js/jquery.mobilemenu.js"); ?>"></script>
+    <script type="text/javascript" src="<?php echo base_url("public/js/jflickrfeed.min.js"); ?>"></script>
+    <script type="text/javascript" src="<?php echo base_url("public/js/gmaps.js"); ?>"></script>
+    <script type="text/javascript" src="<?php echo base_url("public/js/main.js"); ?>"></script>
+    <script type="text/javascript" src="<?php echo base_url("public/js/app.js"); ?>"></script>
 </body>
 </html>

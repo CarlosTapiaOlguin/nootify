@@ -22,35 +22,35 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
     
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="public/css/bootstrap-responsive.min.css">
-    <link rel="stylesheet" href="public/css/font-awesome.min.css">
-    <link rel="stylesheet" href="public/css/flexslider.css">
-    <link rel="stylesheet" href="public/css/prettyPhoto.css">
-    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="<?php echo base_url("public/css/bootstrap.min.css"); ?>">
+    <link rel="stylesheet" href="<?php echo base_url("public/css/bootstrap-responsive.min.css"); ?>">
+    <link rel="stylesheet" href="<?php echo base_url("public/css/font-awesome.min.css"); ?>">
+    <link rel="stylesheet" href="<?php echo base_url("public/css/flexslider.css"); ?>">
+    <link rel="stylesheet" href="<?php echo base_url("public/css/prettyPhoto.css"); ?>">
+    <link rel="stylesheet" href="<?php echo base_url("public/css/style.css"); ?>">
     
     <!-- Custom Colors -->
-    <!-- <link rel="stylesheet" href="public/css/colors/blue/color.css"> -->
-    <!-- <link rel="stylesheet" href="public/css/colors/green/color.css"> -->
-    <!-- <link rel="stylesheet" href="public/css/colors/lightblue/color.css"> -->
-    <!-- <link rel="stylesheet" href="public/css/colors/purple/color.css"> -->
-    <!-- <link rel="stylesheet" href="public/css/colors/yellow/color.css"> -->
+    <!-- <link rel="stylesheet" href="<?php echo base_url("public/css/colors/blue/color.css"); ?>"> -->
+    <!-- <link rel="stylesheet" href="<?php echo base_url("public/css/colors/green/color.css"); ?>"> -->
+    <!-- <link rel="stylesheet" href="<?php echo base_url("public/css/colors/lightblue/color.css"); ?>"> -->
+    <!-- <link rel="stylesheet" href="<?php echo base_url("public/css/colors/purple/color.css"); ?>"> -->
+    <!-- <link rel="stylesheet" href="<?php echo base_url("public/css/colors/yellow/color.css"); ?>"> -->
     
     <!--[if IE 7]>
-    	<link rel="stylesheet" href="public/css/font-awesome-ie7.min.css">
+    	<link rel="stylesheet" href="<?php echo base_url("public/css/font-awesome-ie7.min.css"); ?>">
     <![endif]-->
     
     <!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
     
-    <noscript><link rel="stylesheet" href="public/css/no-js.css"></noscript>
+    <noscript><link rel="stylesheet" href="<?php echo base_url("public/css/no-js.css"); ?>"></noscript>
     
     <!-- Favicons -->
-	<link rel="shortcut icon" href="public/images/favicon.ico">
-	<link rel="apple-touch-icon" href="public/images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="public/images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="public/images/apple-touch-icon-114x114.png">
+	<link rel="shortcut icon" href="<?php echo base_url("public/images/favicon.ico"); ?>">
+	<link rel="apple-touch-icon" href="<?php echo base_url("public/images/apple-touch-icon.png"); ?>">
+	<link rel="apple-touch-icon" sizes="72x72" href="<?php echo base_url("public/images/apple-touch-icon-72x72.png"); ?>">
+	<link rel="apple-touch-icon" sizes="114x114" href="<?php echo base_url("public/images/apple-touch-icon-114x114.png"); ?>">
     
 </head>
 
@@ -67,8 +67,8 @@
                 	<li class="current"><a href="index.html">Home</a></li>
                     <li><a href="#">Nosotros</a></li>
                     <li><a href="#">Como funciona</a></li>
-                    <li><a href="#">Registrate</a></li>
-                    <li><a href="#">Ingresa</a></li>
+                    <li><a href="<?php echo base_url("login/registro"); ?>">Registrate</a></li>
+                    <li><a href="<?php echo base_url("login/ingresar"); ?>">Ingresa</a></li>
                     <li><a href="#">Info<i class="icon-chevron-down"></i></a>
                     	<ul>
                         	<li><a href="single_page.html">Terminos y condiciones</a></li>
@@ -92,7 +92,7 @@
         	<div class="container">
             
                 <div class="logo">
-                	<a href="index.html"><img src="public/images/logo.png" alt="Logo" /></a> <!-- site logo -->
+                	<a href="index.html"><img src="<?php echo base_url("public/images/logo.png"); ?>" alt="Logo" /></a> <!-- site logo -->
                 </div>
                 
                 <p>Aenean dictum pharetra nibh, sodales luctus felis aliquet.<br>Duis tempor rhoncus quam, at blandit nulla egestas vitae risus dictum tempor luctus.</p>

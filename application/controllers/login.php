@@ -3,28 +3,34 @@ class Login extends CI_Controller {
 
    function ingresar($idioma=null)
    {
-      if(!isset($_POST['maillogin'])){   //   Si no recibimos ningún valor proveniente del formulario, significa que el usuario recién ingresa.   
-         $this->load->view('loginTemplate');      //   Por lo tanto le presentamos la pantalla del formulario de ingreso.
-      }
-      else{                        //   Si el usuario ya pasó por la pantalla inicial y presionó el botón "Ingresar"
-         $this->form_validation->set_rules('maillogin','e-mail','required|valid_email|trim|xss_clean');      //   Configuramos las validaciones ayudandonos con la librería form_validation del Framework Codeigniter
-         $this->form_validation->set_rules('passwordlogin','password','required|trim|xss_clean|sha1');
-         if(($this->form_validation->run()==FALSE)){            //   Verificamos si el usuario superó la validación
-            $this->load->view('loginTemplate');                     //   En caso que no, volvemos a presentar la pantalla de login
+
+      if(!isset($_POST['email'])){
+         $this->load->view('headerTemplate');
+         $this->load->view('loginTemplate');
+         $this->load->view('footerTemplate');  
+      }else{                    
+         $this->form_validation->set_rules('email','e-mail','required|valid_email|trim|xss_clean');      
+         $this->form_validation->set_rules('password','password','required|trim|xss_clean|sha1');
+         if(($this->form_validation->run()==FALSE)){ 
+            $this->load->view('headerTemplate');
+            $this->load->view('loginTemplate');
+            $this->load->view('footerTemplate');                   
          }
-         else{                                       //   Si ambos campos fueron correctamente rellanados por el usuario,
+         else{                                      
             $this->load->model('usuario_model');
-            $ExisteUsuarioyPassoword=$this->usuario_model->ValidarUsuario($_POST['maillogin'],$_POST['passwordlogin']);   //   comprobamos que el usuario exista en la base de datos y la password ingresada sea correcta
-            if($ExisteUsuarioyPassoword){   // La variable $ExisteUsuarioyPassoword recibe valor TRUE si el usuario existe y FALSE en caso que no. Este valor lo determina el modelo.
-               echo "Validacion Ok<br><br><a href=''>Volver</a>";   //   Si el usuario ingresó datos de acceso válido, imprimos un mensaje de validación exitosa en pantalla
-            }
-            else{   //   Si no logró validar
+            $ExisteUsuarioyPassoword=$this->usuario_model->ValidarUsuario($_POST['email'],$_POST['password']);  
+            if($ExisteUsuarioyPassoword){  
+               echo "Validacion Ok";   
+            }else{ 
                $data['error']="E-mail o password incorrecta, por favor vuelva a intentar";
-               $this->load->view('loginTemplate',$data);   //   Lo regresamos a la pantalla de login y pasamos como parámetro el mensaje de error a presentar en pantalla
+               $this->load->view('headerTemplate');
+               $this->load->view('loginTemplate', $data);
+               $this->load->view('footerTemplate');
             }
          }
       }
    }
+   
 
    function registro()
    {
@@ -66,7 +72,9 @@ class Login extends CI_Controller {
 
 
    function index(){
-      $this->load->view('loginTemplate'); 
+      $this->load->view('headerTemplate');
+      $this->load->view('loginTemplate');
+      $this->load->view('footerTemplate'); 
    }
 }
 ?>
