@@ -15,7 +15,7 @@
    </div>      
    <div class="fila">
       <div class="LoginUsuariosCabecera">Contraseña:</div>
-      <div class="LoginUsuariosDato"><input type="password" name="passwordlogin" value="<?= set_value('passwordlogin'); ?>" size="25" /></div>
+      <div class="LoginUsuariosDato"><input type="password" name="passwordlogin" value="" size="25" /></div>
       <div class="LoginUsuariosError"><?php echo form_error('passwordlogin');?></div>
    </div>   
    <div class="fila">
