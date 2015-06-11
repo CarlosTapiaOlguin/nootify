@@ -38,7 +38,7 @@
                         <label for="password">Password</label>
                         <input type="password" name="password" id="password" maxlength="50">
                         <br>
-                        <input type="submit" name="submit" value="Ingresar">
+                        <input type="submit" name="submit" value="Registrar">
                         <?php if(!empty(form_error('email'))) { ?>
                         <div class="alert alert-danger" role="alert">
                             a<?php echo form_error('email'); ?>b
