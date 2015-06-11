@@ -1679,7 +1679,7 @@ div.ppt {
 	margin-bottom:15px;
 }
 #post .page-contact .post-content-text form { margin:0px; }
-	#post .page-contact .post-content-text form input[type="text"] { width:100%; }
+	#post .page-contact .post-content-text form input[type="text"] , input[type="password"] { width:100%; }
 	#post .page-contact .post-content-text form textarea {
 		width:100%;
 		margin-bottom:20px;

@@ -14,7 +14,7 @@ class Login extends CI_Controller {
          if(($this->form_validation->run()==FALSE)){ 
             $this->load->view('headerTemplate');
             $this->load->view('loginTemplate');
-            $this->load->view('footerTemplate');                   
+            $this->load->view('footerTemplate');  
          }
          else{                                      
             $this->load->model('usuario_model');
@@ -34,9 +34,9 @@ class Login extends CI_Controller {
 
    function registro()
    {
-      if(isset($_POST['grabar']) and $_POST['grabar'] == 'si'){
+      if(!isset($_POST['email'])){
          $this->form_validation->set_rules('email','Correo','required|valid_email|trim|xss_clean');
-         $this->form_validation->set_rules('pass','Password','required|trim|xss_clean|sha1');
+         $this->form_validation->set_rules('password','Password','required|trim|xss_clean|sha1');
          
          $this->form_validation->set_message('required', 'El %s es requerido');
          $this->form_validation->set_message('valid_email', 'El %s no es válido');
@@ -44,11 +44,13 @@ class Login extends CI_Controller {
          //SI ALGO NO HA IDO BIEN NOS DEVOLVERÁ AL INDEX MOSTRANDO LOS ERRORES
          if($this->form_validation->run()==FALSE)
          {
+            $this->load->view('headerTemplate');
             $this->load->view('registroTemplate');
+            $this->load->view('footerTemplate');
          }else{
          //EN CASO CONTRARIO PROCESAMOS LOS DATOS
             $email = $this->input->post('email');
-            $password = $this->input->post('pass');
+            $password = $this->input->post('password');
                         //ENVÍAMOS LOS DATOS AL MODELO CON LA SIGUIENTE LÍNEA
             $this->load->model('usuario_model');
             $insert = $this->usuario_model->nuevoUsuario($email,$password);
@@ -66,7 +68,9 @@ class Login extends CI_Controller {
             echo "registrado";
          }
       }else{
+         $this->load->view('headerTemplate');
          $this->load->view('registroTemplate');
+         $this->load->view('footerTemplate');   
       }
    }
 

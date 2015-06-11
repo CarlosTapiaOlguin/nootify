@@ -36,9 +36,14 @@
                         <label for="email">Email</label>
                         <input type="text" name="email" id="email" maxlength="50" value="<?= set_value('email'); ?>">
                         <label for="password">Password</label>
-                        <input type="text" name="password" id="password" maxlength="50">
+                        <input type="password" name="password" id="password" maxlength="50">
+                        <br>
                         <input type="submit" name="submit" value="Ingresar">
-                        <label><?php echo form_error('email'); ?></label>
+                        <?php if(!empty(form_error('email'))){ ?>
+                        <div class="alert alert-danger" role="alert">
+                            <?php echo form_error('email'); ?>
+                        </div>
+                        <?php }?>
                     <?php echo form_close(); ?>
          </div>
       </div>
@@ -54,28 +59,4 @@
 </div>
 </div>
 
-<!--<div id="LoginUsuarios">
-   <div class="fila">
-      <div class="LoginUsuariosCabecera">E-mail:</div>
-      <div class="LoginUsuariosDato"><input type="text" name="maillogin" value="<?= set_value('email'); ?>" size="25" /></div>
-      <div class="LoginUsuariosError">
-      <?php
-         if(isset($error)){
-            echo "<p>".$error."</p>";
-         }
-         echo form_error('maillogin');
-      ?></div>
-      
-   </div>      
-   <div class="fila">
-      <div class="LoginUsuariosCabecera">Contraseña:</div>
-      <div class="LoginUsuariosDato"><input type="password" name="passwordlogin" value="" size="25" /></div>
-      <div class="LoginUsuariosError"><?php echo form_error('passwordlogin');?></div>
-   </div>   
-   <div class="fila">
-      <div class="LoginUsuariosCabecera"><input type="submit" value="Ingresar"></div>
-      <div class="LoginUsuariosDato"></div>
-   </div>      
-</div>
-</form>-->
 
