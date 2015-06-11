@@ -64,11 +64,11 @@
         	<div class="container">
             
             	<ul>
-                	<li class="current"><a href="index.html">Home</a></li>
+                	<li class="current"><a href="<?= base_url("home"); ?>">Home</a></li>
                     <li><a href="#">Nosotros</a></li>
                     <li><a href="#">Como funciona</a></li>
-                    <li><a href="<?php echo base_url("login/registro"); ?>">Registrate</a></li>
-                    <li><a href="<?php echo base_url("login/ingresar"); ?>">Ingresa</a></li>
+                    <li><a href="<?= base_url("login/registro"); ?>">Registrate</a></li>
+                    <li><a href="<?= base_url("login/ingresar"); ?>">Ingresa</a></li>
                     <li><a href="#">Info<i class="icon-chevron-down"></i></a>
                     	<ul>
                         	<li><a href="single_page.html">Terminos y condiciones</a></li>
